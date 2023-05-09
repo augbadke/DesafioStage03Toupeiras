@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsla(84, 64%, 53%, 1);
+}
+
+.page {
+  margin: 0 auto;
+  height: 1134px;
+  width: 1591px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(assets/fundo.svg);
+  background-size: cover;
+  border: 1px solid hsla(84, 64%, 53%, 1);
+}
+
+
+.mole-wrapper {
+  display: grid;
+  grid-template-columns:auto auto auto auto;
+  width: fit-content;
+  gap: 70px;
+  margin-top: 303px;
+  margin-left: 230px;
+}
+
+.mole-hole{
+  width: 223px;
+  height: 169px;
+  background-image: url(assets/toupeira6.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.mole-hole:nth-of-type(3) .dinamic {
+  width: 223px;
+  height: 169px;
+  opacity: 0;
+  animation: opacitychange 4000ms 1800ms ease-out infinite;
+}
+
+.mole-hole:nth-of-type(5) .dinamic {
+  width: 223px;
+  height: 169px;
+  opacity: 0;
+  animation: opacitychange 4000ms 2200ms ease-out infinite;
+}
+
+.mole-hole:last-of-type .dinamic {
+  width: 223px;
+  height: 169px;
+  opacity: 0;
+  animation: opacitychange 4000ms 700ms ease-out infinite;
+}
+
+@keyframes opacitychange {
+  0% {
+    background-image: url(assets/toupeira1.svg);
+    opacity: 1;
+  }
+
+  1% {
+    background-image: url(assets/toupeira2.svg);
+    opacity: 0.7;
+  }
+
+  1.5% {
+    background-image: url(assets/toupeira2.svg);
+    opacity: 1;
+  }
+
+  3.0% {
+    background-image: url(assets/toupeira3.svg);
+    opacity: 0.7;
+  }
+
+  7.5% {
+    background-image: url(assets/toupeira3.svg);
+    opacity: 1;
+  }
+
+  8.0% {
+    background-image: url(assets/toupeira4.svg);
+    opacity: 0.7;
+  }
+
+  8.5% {
+    background-image: url(assets/toupeira4.svg);
+    opacity: 1;
+  }
+
+  9.0% {
+    background-image: url(assets/toupeira5.svg);
+    opacity: 0.7;
+  }
+
+  10.0% {
+    background-image: url(assets/toupeira5.svg);
+    opacity: 1;
+  }
+  11.5% {
+    background-image: url(assets/toupeira5.svg);
+    opacity: 0;
+  }
+}
